@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Complete College Website</title>
+</head>
+<body>
+    <section class="sub-header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" onclick="toggleMenu();">HOME</a></li>
+                    <li><a href="about.html" onclick="toggleMenu();">ABOUT</a></li>
+                    <li><a href="course.html" onclick="toggleMenu();">COURSE</a></li>
+                    <li><a href="blog.html" onclick="toggleMenu();">BLOG</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu();">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs for 2021</h1>
+
+    </section>
+
+    <!-- blog page content -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Certificates & Online Programs for 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore voluptatum corrupti ipsam magni exercitationem repudiandae earum quaerat accusamus quod, laboriosam sed. Obcaecati magni libero laboriosam! Magnam animi quidem eligendi corrupti cupiditate nobis necessitatibus! Voluptatem quod aliquam aut reprehenderit! Et!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ad unde, aliquam dolorum, praesentium porro, reprehenderit maiores tenetur similique blanditiis excepturi incidunt! Deserunt ad iure ipsa aut, perspiciatis blanditiis quas, repellat repellendus obcaecati maxime rem labore aliquam corrupti, minima dicta! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quisquam quibusdam nulla.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusantium repellat sed aperiam optio, sint facilis eligendi voluptatibus exercitationem impedit repellendus praesentium suscipit non eveniet doloremque alias debitis culpa laboriosam. Reprehenderit ea dolorum quis, sint consequuntur officiis placeat ducimus id! Sit omnis placeat asperiores excepturi nisi. Esse id architecto maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis explicabo eos accusamus.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa distinctio quo a consequatur sunt. Itaque aliquid qui recusandae alias aut harum consequuntur id quos accusamus, atque similique laborum quisquam dolor assumenda rem cum numquam architecto voluptatibus doloribus amet velit tempore saepe! Illo assumenda doloribus ipsa praesentium eligendi mollitia ea dicta blanditiis ratione rerum enim alias minima, quisquam temporibus vel.</p>
+                
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+
+                    <form  class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Buisness Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>40</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>31</span>
+                </div>
+                <div>
+                    <span>Commmerce</span>
+                    <span>36</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta a corrupti at saepe quod<br>nisi totam, molestiae quibusdam sed! Sit perspiciatis alias illo.</p>
+        <div class="icons">
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-linkedin"></i>
+        </div>
+        <p>Made By <i class="fas fa-heart-o"></i>Anikesh</p>
+
+    </section>
+
+            <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

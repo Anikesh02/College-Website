@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Complete College Website</title>
+</head>
+<body>
+    <section class="sub-header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" onclick="toggleMenu();">HOME</a></li>
+                    <li><a href="about.html" onclick="toggleMenu();">ABOUT</a></li>
+                    <li><a href="course.html" onclick="toggleMenu();">COURSE</a></li>
+                    <li><a href="blog.html" onclick="toggleMenu();">BLOG</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu();">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+
+    <!-- About us content -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium inventore sint culpa nihil libero quas quod possimus debitis. Ipsum fuga debitis incidunt cumque, exercitationem amet quos provident esse! Laborum error incidunt, harum quam aut fuga aspernatur consequuntur unde quasi voluptate omnis modi dolores, natus sequi tempora delectus doloribus, quia quis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus qui.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta a corrupti at saepe quod<br>nisi totam, molestiae quibusdam sed! Sit perspiciatis alias illo.</p>
+        <div class="icons">
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-linkedin"></i>
+        </div>
+        <p>Made By <i class="fas fa-heart-o"></i>Anikesh</p>
+
+    </section>
+
+            <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
