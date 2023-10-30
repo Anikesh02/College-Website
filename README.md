@@ -1,2 +1,2 @@
 View here: 
-https://anikesh02.github.io/College-Website-github.io/
+https://anikesh02.github.io/College-Website/
